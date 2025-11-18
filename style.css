@@ -1,20 +1,20 @@
 /* ===== VARIABLES FOR LIGHT/DARK MODE ===== */
 :root {
-  --bg-color: #f9f9f9;
+  --bg-color: #f3e6ff;   /* light purple background */
   --text-color: #222;
-  --primary-color: #00adb5;
-  --card-bg: #fff;
-  --btn-text: #00adb5;
-  --btn-bg: #fff;
+  --primary-color: #9b59b6;  /* purple */
+  --card-bg: #ffffff;
+  --btn-text: #9b59b6;
+  --btn-bg: #ffffff;
 }
 
 body.dark-mode {
-  --bg-color: #0e0e0e;
+  --bg-color: #2c003e;   /* deep purple */
   --text-color: #eee;
-  --primary-color: #00adb5;
-  --card-bg: #1c1c1c;
-  --btn-text: #fff;
-  --btn-bg: #00adb5;
+  --primary-color: #c58df5; /* lighter purple */
+  --card-bg: #3d0066;
+  --btn-text: #ffffff;
+  --btn-bg: #9b59b6;
 }
 
 /* ===== GLOBAL ===== */
@@ -93,7 +93,7 @@ header {
   justify-content: center;
   text-align: center;
   padding: 0 2rem;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #007c84 100%);
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
   color: #fff;
 }
 
@@ -124,6 +124,7 @@ header {
   border-radius: 30px;
   font-weight: bold;
   transition: 0.3s;
+  border: 2px solid var(--btn-text);
 }
 
 .btn:hover {
@@ -181,7 +182,7 @@ h2 {
 .project-card a {
   display: inline-block;
   margin-top: 1rem;
-  color: var(--btn-bg);
+  color: #fff;
   background-color: var(--primary-color);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -190,7 +191,7 @@ h2 {
 }
 
 .project-card a:hover {
-  background-color: #007c84;
+  background-color: #8e44ad;
 }
 
 /* Hover effect for project card */
@@ -217,7 +218,7 @@ h2 {
 }
 
 .skill-tags span:hover {
-  background-color: #007c84;
+  background-color: #8e44ad;
   cursor: default;
 }
 
